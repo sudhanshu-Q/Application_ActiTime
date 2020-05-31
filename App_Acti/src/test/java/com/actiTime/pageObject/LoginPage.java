@@ -31,6 +31,15 @@ public class LoginPage
 	@CacheLookup
 	WebElement BtnSignIn;
 	
+	
+	@FindBy(id="blank-install")
+	@CacheLookup
+	WebElement LaunchActiTime;
+	
+	@FindBy(xpath="//button[@class='startButton']")
+	@CacheLookup
+	WebElement startUsingBTN;
+	
 	public void setUserName()
 	{
 		tbUsername.sendKeys(read.getUsername());
@@ -42,6 +51,14 @@ public class LoginPage
 	public void clickSignInBTN()
 	{
 		BtnSignIn.click();
+	}
+	public void clickLaunchActitime()
+	{
+		LaunchActiTime.click();
+	}
+	public void clickOnStartActiTime()
+	{
+		startUsingBTN.click();
 	}
 
 }

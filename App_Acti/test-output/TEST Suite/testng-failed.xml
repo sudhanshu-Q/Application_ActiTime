@@ -6,15 +6,4 @@
       <class name="com.actiTime.Test.TC_001_LoginTest"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.actiTime.Test.TC_001_LoginTest">
-        <methods>
-          <include name="shutDown"/>
-          <include name="loginTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.actiTime.Test.TC_001_LoginTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TEST Suite] -->

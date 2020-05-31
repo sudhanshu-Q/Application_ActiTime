@@ -22,6 +22,7 @@ public void loginTest()
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	initLogin.clickSignInBTN();
 	driver.manage().window().maximize();
-	System.out.println(driver.getTitle());
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 }
 }
