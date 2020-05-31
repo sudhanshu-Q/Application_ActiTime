@@ -17,6 +17,7 @@ public class Baseclass
 	{
 		System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
 		driver=new ChromeDriver();
+		driver.get(readconfig.getUrl());
 		
 	}
 	@AfterClass

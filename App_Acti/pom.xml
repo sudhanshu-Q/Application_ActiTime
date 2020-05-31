@@ -48,6 +48,19 @@
 
     
     <!-- https://mvnrepository.com/artifact/com.github.weaselworks/ChromeDriver -->
+<!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
+<dependency>
+    <groupId>com.beust</groupId>
+    <artifactId>jcommander</artifactId>
+    <version>1.69</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-chrome-driver</artifactId>
+    <version>3.141.59</version>
+</dependency>
 
     
     

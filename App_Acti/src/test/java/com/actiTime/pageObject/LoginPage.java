@@ -13,7 +13,7 @@ import com.actTime.utiities.ReadDataConfiguration;
 public class LoginPage
 {
 	ReadDataConfiguration read=new ReadDataConfiguration();
-	WebDriver ldDriver;
+	public WebDriver ldDriver;
 	public LoginPage(WebDriver rdriver)
 	{
 		ldDriver=rdriver;
