@@ -23,6 +23,7 @@ public void loginTest()
 	initLogin.clickSignInBTN();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	System.out.println("Launched acti time");
 
 }
 }
