@@ -10,7 +10,7 @@ public class ReadDataConfiguration
 
 	public ReadDataConfiguration()
 	{
-		File sourceProperties= new File("./Configuration/DataConfiguration.properties");
+		File sourceProperties= new File("./Configuration\\DataConfiguration.properties");
 		try
 		{
 			FileInputStream fis=new FileInputStream(sourceProperties);
