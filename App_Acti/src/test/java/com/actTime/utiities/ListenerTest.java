@@ -10,45 +10,53 @@ public class ListenerTest extends Baseclass implements ITestListener
 
 {
 
-	public void onTestStart(ITestResult result)
+	public void onTestStart(ITestResult Result)
 	{
-		// TODO Auto-generated method stub
-		
+		System.out.println("Executing test cases started");
+		System.out.println("Started"+Result.getName());
+
 	}
 
-	public void onTestSuccess(ITestResult result) 
+	public void onTestSuccess(ITestResult Result) 
 	{
-		// TODO Auto-generated method stub
-		
+		System.out.println("Test succeeded");
+		System.out.println("Test succeeded"+Result.getName());
+
 	}
 
-	public void onTestFailure(ITestResult result) 
+	public void onTestFailure(ITestResult Result) 
 	{
-		// TODO Auto-generated method stub
-		
+		System.out.println("Test Failed");
+		System.out.println(Result.getName());
+		System.out.println("Test failed with screenshot captured");
+		System.out.println("The name of the test case failed "+Result.getName());
+		takeScreenshot(Result.getMethod().getMethodName());
+
 	}
 
-	public void onTestSkipped(ITestResult result) 
+	public void onTestSkipped(ITestResult Result) 
 	{
-		// TODO Auto-generated method stub
-		
+		System.out.println("Test case skipped");
+		System.out.println("Skipped Test case"+Result.getName());
+
 	}
 
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result)
+	public void onTestFailedButWithinSuccessPercentage(ITestResult Result)
 	{
-		// TODO Auto-generated method stub
-		
+		System.out.println("Test case failure with success percntage");
+
 	}
 
-	public void onStart(ITestContext context)
+	public void onStart(ITestContext Result)
 	{
-		// TODO Auto-generated method stub
-		
+		System.out.println("Test started");
+		System.out.println("Test case started "+Result.getName());
+
 	}
 
-	public void onFinish(ITestContext context)
+	public void onFinish(ITestContext context) 
 	{
-		// TODO Auto-generated method stub
+		System.out.println("Finally Test case finish"+context.getName());
 		
 	}
 
